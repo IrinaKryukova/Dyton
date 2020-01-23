@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Видеорегистратор Dyton</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="dark"></div>
+<div class="checkout fixed">
+    <div class="top-frame"></div>
+    <div class="close"></div>
+    <h3 class="cherry">Успейте купить!</h3>
+    <h4 class="cherry">До конца акции осталось</h4>
+    <ul class="countdown">
+        <li>
+            <!--<div class="line"></div>-->
+            <div class="digits">1</div>
+            <div class="digits">0</div>
+            <p>часов</p>
+        </li>
+        <li class="separator">:</li>
+        <li>
+            <!--<div class="line"></div>-->
+            <div class="digits">3</div>
+            <div class="digits">9</div>
+            <p>минут</p>
+        </li>
+        <li class="separator">:</li>
+        <li>
+            <!--<div class="line"></div>-->
+            <div class="digits">3</div>
+            <div class="digits">3</div>
+            <p>секунд</p>
+        </li>
+    </ul>
+    <p><span class="bold">Скидка 30%</span> только до 09 апреля 2014 года
+        <br/>Куплено <span class="blue"> 13 регистраторов</span>, осталось по акции: <span class="blue">12</span></p>
+    <ul class="price">
+        <li class="new-price"><span class="bold">5950</span> <span class="ruble"> руб.</span>
+            <div></div>
+        </li>
+        <li class="line-through">8500 <span class="ruble"> руб.</span>
+        </li>
+    </ul>
+    <p><span class="cherry">Ваша экономия: 2550 руб.</span>
+        <br/><a class="grey" href="#">Почему такая цена?</a></p>
+    <form class="input-checkout">
+        <input type="text" name="q" value="ФИО"
+               onfocus="if(this.value=='ФИО'){this.value=''}"
+               onblur="if(this.value==''){this.value='ФИО'}">
+        <input type="text" name="q" value="Телефон"
+               onfocus="if(this.value=='Телефон'){this.value=''}"
+               onblur="if(this.value==''){this.value='Телефон'}">
+        <input type="text" name="q" value="Электронная почта"
+               onfocus="if(this.value=='Электронная почта'){this.value=''}"
+               onblur="if(this.value==''){this.value='Электронная почта'}">
+        <input type="text" name="q" value="Адрес доставки"
+               onfocus="if(this.value=='Адрес доставки'){this.value=''}"
+               onblur="if(this.value==''){this.value='Адрес доставки'}">
+    </form>
+    <form class="submit-checkout">
+        <input class="" type="submit" value="Оформить заказ">
+        <div></div>
+    </form>
+    <div class="memory-card">
+        <img src="img/microSD.png">
+        <p>Оформите заказ сейчас и получите в подарок карту памяти на 4Gb</p>
+    </div>
+</div>
+<div class="checkout fixed form">
+    <div class="top-frame"></div>
+    <div class="close"></div>
+    <h3>Оформить заказ</h3>
+    <form class="input-checkout">
+        <input type="text" name="q" value="ФИО"
+               onfocus="if(this.value=='ФИО'){this.value=''}"
+               onblur="if(this.value==''){this.value='ФИО'}">
+        <input type="text" name="q" value="Телефон"
+               onfocus="if(this.value=='Телефон'){this.value=''}"
+               onblur="if(this.value==''){this.value='Телефон'}">
+        <input type="text" name="q" value="Электронная почта"
+               onfocus="if(this.value=='Электронная почта'){this.value=''}"
+               onblur="if(this.value==''){this.value='Электронная почта'}">
+        <input type="text" name="q" value="Адрес доставки"
+               onfocus="if(this.value=='Адрес доставки'){this.value=''}"
+               onblur="if(this.value==''){this.value='Адрес доставки'}">
+    </form>
+    <form class="submit-checkout">
+        <input class="" type="submit" value="Оформить заказ">
+        <div></div>
+    </form>
+</div>
+<div class="checkout fixed form-reviews">
+    <div class="top-frame"></div>
+    <div class="close"></div>
+    <h3>Ваш отзыв</h3>
+    <form class="input-checkout">
+        <input type="text" name="q" value="ФИО"
+               onfocus="if(this.value=='ФИО'){this.value=''}"
+               onblur="if(this.value==''){this.value='ФИО'}">
+        <input type="text" name="q" value="Электронная почта"
+               onfocus="if(this.value=='Электронная почта'){this.value=''}"
+               onblur="if(this.value==''){this.value='Электронная почта'}">
+        <textarea class="text-reviews" value="Ваш отзыв"
+               onfocus="if(this.value=='Ваш отзыв'){this.value=''}"
+               onblur="if(this.value==''){this.value='Ваш отзыв'}">Ваш отзыв
+        </textarea>
+    </form>
+    <form class="submit-checkout">
+        <input class="" type="submit" value="Добавить отзыв">
+        <div></div>
+    </form>
+</div>
+<div id="body-container">
+    <div id="header">
+        <div id="menu-container">
+            <ul id="menu-base">
+                <li>
+                    <a href="#">Описание регистратора</a>
+                    <div></div>
+                </li>
+                <li class="active">
+                    <a href="#">Преимущества и комплектация</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#">Оплата и доставка</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#">Отзывы покупателей</a>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" id="logo">
+            <img src='img/logo.png'/>
+        </a>
+        <div class="vertical"></div>
+        <div class="contacts">
+            <p><span class="bold">Есть вопросы?</span> Звоните:
+            <br/><span class="phone"><span class="bold">8 (495) 649-63-09</span> (Москва)</span>
+            <br/><span class="phone"><span class="bold">8 (800) 775-36-52</span> (Регионы)</span></p>
+        </div>
+        <div class="hours-open">
+            <img src="img/hours_open.png">
+            <p>График работы:
+            <br/>пн-пт с 9:00 до 19:00
+            <br/>сб-вс - выходной</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="block-description">
+        <div class="name">
+            <h1>Видеорегистратор Dyton Regibox R7 с двумя камерами <span class="bold">со скидкой 30%</span></h1>
+            <div class="discount">
+                <h2><span class="bold">всего за 5950 руб. </span>вместо<span class="line-through"> 8500 руб.</span></h2>
+                <div></div>
+            </div>
+            <div class="clear"></div>
+            <div class="cheaper">
+                <p>Нашли дешевле? Сделаем скидку 30% от цены конкурента</p>
+                <div></div>
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <img src="img/img_big_dyton.png">
+            <ul class="gallery">
+                <li class="active">
+                    <a href="#">
+                        <img src="img/img_small_dyton.png">
+                    </a>
+                    <div class="frame"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img2_small_dyton.png">
+                    </a>
+                    <div class="frame"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_small_dyton.png">
+                    </a>
+                    <div class="frame"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_small_dyton.png">
+                    </a>
+                    <div class="frame"></div>
+                </li>
+            </ul>
+            <a class="look-else" href="#">Посмотреть ещё фото (7)</a>
+        </div>
+        <div class="checkout">
+            <h3 class="cherry">Успейте купить!</h3>
+            <h4 class="cherry">До конца акции осталось</h4>
+            <ul class="countdown">
+                <li>
+                    <div class="line"></div>
+                    <div class="digits">1</div>
+                    <div class="digits">0</div>
+                    <p>часов</p>
+                </li>
+                <li class="separator">:</li>
+                <li>
+                    <div class="line"></div>
+                    <div class="digits">3</div>
+                    <div class="digits">9</div>
+                    <p>минут</p>
+                </li>
+                <li class="separator">:</li>
+                <li>
+                    <div class="line"></div>
+                    <div class="digits">3</div>
+                    <div class="digits">3</div>
+                    <p>секунд</p>
+                </li>
+            </ul>
+            <p><span class="bold">Скидка 30%</span> только до 09 апреля 2014 года
+            <br/>Куплено <span class="blue"> 13 регистраторов</span>, осталось по акции: <span class="blue">12</span></p>
+            <ul class="price">
+                <li class="new-price"><span class="bold">5950</span> <span class="ruble"> руб.</span>
+                    <div></div>
+                </li>
+                <li class="line-through">8500 <span class="ruble"> руб.</span>
+                </li>
+            </ul>
+            <p><span class="cherry">Ваша экономия: 2550 руб.</span>
+            <br/><a class="grey" href="#">Почему такая цена?</a></p>
+            <form class="input-checkout">
+                <input type="text" name="q" value="ФИО"
+                       onfocus="if(this.value=='ФИО'){this.value=''}"
+                       onblur="if(this.value==''){this.value='ФИО'}">
+                <input type="text" name="q" value="Телефон"
+                       onfocus="if(this.value=='Телефон'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Телефон'}">
+                <input type="text" name="q" value="Электронная почта"
+                       onfocus="if(this.value=='Электронная почта'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Электронная почта'}">
+                <input type="text" name="q" value="Адрес доставки"
+                       onfocus="if(this.value=='Адрес доставки'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Адрес доставки'}">
+            </form>
+            <form class="submit-checkout">
+                <input class="" type="submit" value="Оформить заказ">
+                <div></div>
+            </form>
+            <div class="memory-card">
+                <img src="img/microSD.png">
+                <p>Оформите заказ сейчас и получите в подарок карту памяти на 4Gb</p>
+            </div>
+        </div>
+    </div>
+    <div id="block-video-review">
+        <h2>
+            <span>Видеообзор Dyton Regibox R7</span>
+        </h2>
+        <iframe width="856" height="407"
+                src="//www.youtube.com/embed/2QzP84Z9sBo?list=FLBcS1d6fFIyP3YRDXyXxnhw"
+                frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="block-advantage">
+        <h2>Преимущества регистратора
+            <br/>Dyton Regibox R7</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/img1_advatage.png">
+                </a>
+                <div class="describe-advantage">
+                    <p>Чем больше угол обзора - тем больше вы сможете зафиксировать, например, знак на обочине...</p>
+                </div>
+            </li>
+            <li class="vertical"></li>
+            <li>
+                <a href="#">
+                    <img src="img/img2_advatage.png">
+                </a>
+                <div class="describe-advantage">
+                    <p>Чем больше угол обзора - тем больше вы сможете зафиксировать, например, знак на обочине...</p>
+                </div>
+            </li>
+            <li class="vertical"></li>
+            <li>
+                <a href="#">
+                    <img src="img/img3_advatage.png">
+                </a>
+                <div class="describe-advantage">
+                    <p>Чем больше угол обзора - тем больше вы сможете зафиксировать, например, знак на обочине...</p>
+                </div>
+            </li>
+            <li class="vertical"></li>
+            <li>
+                <a href="#">
+                    <img src="img/img4_advatage.png">
+                </a>
+                <div class="describe-advantage">
+                    <p>Чем больше угол обзора - тем больше вы сможете зафиксировать, например, знак на обочине...</p>
+                </div>
+            </li>
+        </ul>
+        <p>
+            <a href="#">
+                <img src="img/img1_advatage2.png">
+            </a>
+            <a href="#">
+                <img src="img/img2_advatage2.png">
+            </a>
+            <a href="#">
+                <img src="img/img3_advatage2.png">
+            </a>
+            <a href="#">
+                <img src="img/img4_advatage2.png">
+            </a>
+            <a href="#">
+                <img src="img/img5_advatage2.png">
+            </a>
+            <a href="#">
+                <img src="img/img6_advatage2.png">
+            </a>
+        </p>
+        <div class="button-blue">
+            <a href="#">Купить сейчас за 5950 руб.</a>
+            <div></div>
+        </div>
+    </div>
+    <div id="block-components">
+        <h2>Комплектность Regibox R7</h2>
+        <img src="img/components.png">
+        <div class="hint" style="top:90px;left: 123px;">1
+            <div>Держатель на стекло
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:135px;left: 385px;">2
+            <div>Соединительный кабель
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:115px;left: 595px;">3
+            <div>Флэш-карта
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:220px;left: 600px;">4
+            <div>Основной экран
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:360px;left: 415px;">5
+            <div>GPS приёмник
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:190px;left: 790px;">6
+            <div>Автомобильная зарядка
+                <div></div>
+            </div>
+        </div>
+        <div class="hint" style="top:285px;left: 970px;">7
+            <div>USB кабель
+                <div></div>
+            </div>
+        </div>
+        <p>1. Держатель на стекло, 2. Соединительный кабель, 3. Флэш-карта, 4. Основной экран, 5. GPS приёмник, 6. Автомобильная зарядка, 7. USB кабель</p>
+    </div>
+    <div id="block-why_by_us">
+        <h2>Почему покупают у нас?</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/why_buy_us_img1.png">
+                    <p class="blue">Бесплатная доставка в любой регион РФ через 1-10 дней</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/why_buy_us_img2.png">
+                    <p class="blue">Самовывоз в Москве в день заказа</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/why_buy_us_img3.png">
+                    <p class="blue">24 часа - срок доставки по Москве и области</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/why_buy_us_img4.png">
+                    <p class="blue">Возврат товара или обмен без причины в течение 14 дней</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/why_buy_us_img5.png">
+                    <p class="blue">Официальная гарантия на товар 1 год</p>
+                </a>
+            </li>
+        </ul>
+        <div class="warranty">
+            <div>
+                <img src="img/back_guarantee.png">
+                <p class="blue"> Если Вас не устроит качество товара, мы вернем Вам деньги без лишних вопросов!</p>
+            </div>
+            <div>
+                <img src="img/pay_delivery.png">
+                <p class="blue"> Доставка без предоплаты. Вы оплачивайте заказ при получении</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="block-payment_delivery">
+        <h2>Условия оплаты и доставки</h2>
+        <div class="right">
+            <div class="check"></div>
+            <div class="icon-mail"></div>
+        </div>
+        <div class="terms">
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+            <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+                <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.
+                <br/>Мы доверяем вам и не требуем от вас никакой предоплаты.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+                <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+                <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+                <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.</p>
+            <hr/>
+            <h3>Доставка Почтой России</h3>
+            <p>Мы доверяем вам и не требуем от вас никакой предоплаты.
+                <br/>Мы уважаем Ваше время и поэтому все заказы отправляем только бандеролями 1 класса. Вы можете забрать и оплатить
+                свою посылку на почте в любое удобное для вас время.</p>
+        </div>
+        <div class="map"></div>
+    </div>
+    <div id="block-how_to_book">
+        <h2>Как оформить заказ?</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_book_img1.png">
+                    <p class="blue">Оформите заказ прямо на сайте</p>
+                </a>
+            </li>
+            <li class="or">или</li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_book_img2.png">
+                    <p class="blue">Оформите заказ по телефону</p>
+                </a>
+            </li>
+            <li class="arrow"></li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_book_img3.png">
+                    <p class="blue">Менеджер уточняет детали заказа и время доставки</p>
+                </a>
+            </li>
+            <li class="arrow"></li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_book_img4.png">
+                    <p class="blue">Отправляем груз в ТК в течение 12 часов, вы получаете трекинг номер посылки</p>
+                </a>
+            </li>
+            <li class="arrow"></li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_book_img5.png">
+                    <p class="blue">Получение заказа с курьером или в пункте самовывоза</p>
+                </a>
+            </li>
+        </ul>
+        <h2>Получить заказ очень просто!</h2>
+        <ul class="to-get">
+            <li>
+                <a href="#">
+                    <img src="img/how_to_%20get_img1.png">
+                    <p class="orange">Cамовывоз в Москве в день заказа</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_%20get_img2.png">
+                    <p class="orange">Москва и Мо курьером в течение 24 часов</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_%20get_img3.png">
+                    <p class="orange">Санкт-Петербург курьером в течение 48 часов</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/how_to_%20get_img4.png">
+                    <p class="orange">Россия 5-10 календарных дней</p>
+                </a>
+            </li>
+        </ul>
+        <div class="photo-to-get">
+            <img src="img/how_to_%20get_img5.png">
+        </div>
+    </div>
+    <div id="block-reviews">
+        <h2>Отзывы о регистраторе Dyton Regibox R7</h2>
+        <ul class="reviews">
+            <a class="arrow-left"></a>
+            <a class="arrow-right"></a>
+            <li>
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <h5>aksilev.I</h5>
+                <h6>28 января 2014, в 12:45</h6>
+                <hr/>
+                <p>Две камеры. Таких приборов мало пока с нормальными характеристиками. Удобно снимать и одевать на лобовое стекло.
+                   Пишет одновременно с двух камер, но узкая картинка, либо широкая, но по отдельности с каждой.</p>
+            </li>
+            <li>
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <h5>Kohbasus</h5>
+                <h6>17 января 2014, в 00:25</h6>
+                <hr/>
+                <p>Две камеры. Таких приборов мало пока с нормальными характеристиками. Удобно снимать и одевать на лобовое стекло.
+                    Пишет одновременно с двух камер, но узкая картинка, либо широкая, но по отдельности с каждой.</p>
+            </li>
+            <li>
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <h5>aksilev.I</h5>
+                <h6>28 января 2014, в 12:45</h6>
+                <hr/>
+                <p>Хорошая картинка. Видны номера, включая встречные авто, хотя, конечно, не всегда - зависит от ссумарной
+                   скорости сближения, но если ехать под 100 км и встречный так же, шансов прочесть где-то 50% - как попадет
+                   встречное авто на кадр. </p>
+            </li>
+            <li>
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <h5>aksilev.I</h5>
+                <h6>28 января 2014, в 12:45</h6>
+                <hr/>
+                <p>Две камеры. Таких приборов мало пока с нормальными характеристиками. Удобно снимать и одевать на лобовое стекло.
+                    Пишет одновременно с двух камер, но узкая картинка, либо широкая, но по отдельности с каждой.</p>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="button-blue">
+            <a href="#">Оставить отзыв</a>
+            <div></div>
+        </div>
+        <div class="time-to-buy">
+            <h3>Купить регистратор Dyton Regibox R7 с всего за
+            <div class="new-price">5950 <span class="ruble">руб.</span>
+                <div></div>
+            </div> </h3>
+            <div class="vertical"></div>
+            <form class="input-checkout">
+                <input type="text" name="q" value="ФИО"
+                       onfocus="if(this.value=='ФИО'){this.value=''}"
+                       onblur="if(this.value==''){this.value='ФИО'}">
+                <input type="text" name="q" value="Телефон"
+                       onfocus="if(this.value=='Телефон'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Телефон'}">
+                <input type="text" name="q" value="Электронная почта"
+                       onfocus="if(this.value=='Электронная почта'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Электронная почта'}">
+                <input type="text" name="q" value="Адрес доставки"
+                       onfocus="if(this.value=='Адрес доставки'){this.value=''}"
+                       onblur="if(this.value==''){this.value='Адрес доставки'}">
+            </form>
+            <form class="submit-checkout">
+                <input type="submit" value="Оформить заказ">
+                <div></div>
+            </form>
+            <div class="clear"></div>
+            <div class="discount-checkout">
+                <p><span class="cherry">Ваша экономия при покупке до 09 апреля составляет 2550 руб.</span>
+                <br/>Уже куплено по акции<span class="blue"> 13 регистраторов</span>, осталось: <span class="blue">12</span></p>
+
+            </div>
+        </div>
+        <div class="contacts">
+            <p>Вы можете оформить заказ и по телефонам:
+                <br/><span class="phone"><span class="bold">8 (495) 649-63-09</span> (Москва)</span>
+                <span class="phone"><span class="bold">8 (800) 775-36-52</span> (Регионы)</span>
+                <br/><span class="hours-open"> пн-пт с 9:00 до 19:00, cб-вс - выходной</span></p>
+        </div>
+
+    </div>
+    <div id="block-partners">
+        <h2>Клиенты и партнеры</h2>
+        <ul>
+            <a class="arrow-left"></a>
+            <a class="arrow-right"></a>
+            <li>
+                <a href="#">
+                    <img src="img/img1_partners.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/img2_partners.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/img3_partners.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/img4_partners.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/img5_partners.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <p class="details">ИП Саркисян, ОГРНИП: 313774626600403, ИНН 773172204687
+        <br/> <a class="blue" href="#">Скачать инструкцию</a> </p>
+</div>
+</div>
+</body>
+</html>
